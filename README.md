@@ -1,3 +1,6 @@
+All credit to the original, I just used Claude Code to package it with Pip for easy installation.
+https://github.com/Tomek20225/pdf-flattener
+
 # PDF Flattener
 
 A command-line tool that converts PDF files into image-based documents, simulating scanned documents while compressing them.
