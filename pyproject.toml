@@ -22,7 +22,7 @@ dev = [
 ]
 
 [project.scripts]
-flatten-pdf = "pdf-flattener.cli:main"
+flatten-pdf = "pdf_flattener.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/robog-two/pdf-flattener"
