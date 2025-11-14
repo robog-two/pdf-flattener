@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-flattener"
+version = "0.1.0"
+description = "A command-line tool that converts PDF files into image-based documents, simulating scanned documents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "robog", email = "robog@example.com"},
+]
+keywords = ["pdf", "flatten", "image", "scanned"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "PyMuPDF==1.24.11",
+    "pdf2image==1.17.0",
+    "pillow==10.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.0.0",
+]
+
+[project.scripts]
+flatten-pdf = "pdf_flattener.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/robog-two/pdf-flattener"
+Repository = "https://github.com/robog-two/pdf-flattener.git"
+Issues = "https://github.com/robog-two/pdf-flattener/issues"
+
+[tool.setuptools]
+packages = ["pdf_flattener"]
