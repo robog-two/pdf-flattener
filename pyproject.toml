@@ -22,12 +22,15 @@ dev = [
 ]
 
 [project.scripts]
-flatten-pdf = "pdf_flattener.cli:main"
+flatten-pdf = "pdf-flattener.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/robog-two/pdf-flattener"
 Repository = "https://github.com/robog-two/pdf-flattener.git"
 Issues = "https://github.com/robog-two/pdf-flattener/issues"
+
+[tool.setuptools.package-dir]
+pdf_flattener = "."
 
 [tool.setuptools]
 packages = ["pdf_flattener"]
